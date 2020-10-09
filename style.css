@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 2rem;
+    margin-left: 3rem;
+}
+
+header span {
+    cursor: pointer;
+}
+
+header p {
+    margin-left: 0.5rem;
+    padding-right: 1rem;
+
+    color: blue;
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 0 2rem;
+}
+
+.classroom{
+    border: .0625rem solid #e0e0e0;
+    border-radius: 10px;
+    max-width: 300px;
+    min-height: 300px;
+    margin: 1rem;
+
+    overflow: hidden;
+}
+
+.classroom-header {
+    padding: 1rem;
+    color: white;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+#header-1 {
+    background-image: url('https://www.gstatic.com/classroom/themes/img_breakfast.jpg');;
+    background-size: cover;
+}
+#header-2 {
+    background-image: url('https://www.gstatic.com/classroom/themes/img_handcraft.jpg');
+    background-size: cover;
+}
+#header-3 {
+    background-image: url('https://www.gstatic.com/classroom/themes/img_backtoschool.jpg');
+    background-size: cover;
+}
+#header-4 {
+    background-image: url('https://www.gstatic.com/classroom/themes/img_learnlanguage.jpg');
+    background-size: cover;
+}
+#header-5 {
+    background-image: url('https://www.gstatic.com/classroom/themes/img_reachout.jpg');
+    background-size: cover;   
+}
+#header-6 {
+    background-image: url('https://www.gstatic.com/classroom/themes/img_graduation.jpg');
+    background-position: center;
+    background-size: cover;
+}
+#header-7 {
+    background-image: url('https://www.gstatic.com/classroom/themes/img_gym.jpg');
+    background-size: cover;
+}
+#header-8 {
+    background-image: url('https://www.gstatic.com/classroom/themes/Honors.jpg');
+    background-size: cover;
+}
+
+.classroom-header h1 {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.classroom-body{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 150px;
+}
+
+.classroom-body img {
+    margin-top: -10rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+}
+
+.classroom-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    border-top: .0625rem solid #e0e0e0;
+    min-height: 60px;
+}
+
+.classroom-footer span {
+    padding: 0.8rem;
+}
+
+.intake-sec {
+    padding: 0.3rem 0 0 0;
+    font-size: 0.8rem;
+}
+
+.instructor {
+    font-size: 0.8rem;
+    padding: 1rem 0 0 0;
+}
+
+
