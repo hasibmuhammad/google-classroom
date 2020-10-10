@@ -39,8 +39,6 @@ themeEl.addEventListener('click', (e) => {
 
     e.target.classList.toggle('dark');
 
-    console.log(e.target.classList);
-
     updateLocalStorage(e.target);
 
     getDataFromLS();
