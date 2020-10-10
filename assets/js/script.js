@@ -1,19 +1,28 @@
 // Selectors
-const themeEl = document.getElementById('theme-dot-1')
+const themeEl = document.getElementById('themeMode');
 const styleEl = document.getElementById('theme-mode-style');
+const moonEl = document.getElementById('moon');
+const sunEl = document.getElementById('sun');
 
 // Get Data from localStorage by Token and add stylesheet accordingly - light or dark
 const getDataFromLS = () => {
     const data = JSON.parse(localStorage.getItem('themeMode'))
     
     if (data !== null) {
-        console.log(data.dark);
-
         if (data.dark) {
+            moonEl.style.display = 'none';
+            sunEl.style.display = 'flex';
+
             styleEl.href = '/google-classroom/assets/css/theme-mode-1.css';
         } else{
+            sunEl.style.display = 'none';
+            moonEl.style.display = 'flex';
+            
             styleEl.href = '/google-classroom/assets/css/theme-mode-default.css'
         }
+    } else {
+        sunEl.style.display = 'none';
+        moonEl.style.display = 'flex';
     }
 }
 
@@ -29,6 +38,8 @@ const updateLocalStorage = (target) => {
 themeEl.addEventListener('click', (e) => {
 
     e.target.classList.toggle('dark');
+
+    console.log(e.target.classList);
 
     updateLocalStorage(e.target);
 

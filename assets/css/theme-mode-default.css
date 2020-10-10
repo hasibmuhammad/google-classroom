@@ -48,26 +48,17 @@ header {
     cursor: pointer;
 }
 
-.theme-dots {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-}
-
-.theme-dots:hover{
-    width: 38px;
-    height: 38px;
-    transition: .25s ease-in-out;
-    cursor: pointer;
-}
-
 .header-right {
     display: flex;
     align-items: center;
 }
 
-#theme-dot-1 {
-    background-color: #0d0d38;
+#moon {
+    pointer-events: none;
+}
+
+#sun {
+    pointer-events: none;
 }
 
 
